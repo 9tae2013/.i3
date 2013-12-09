@@ -132,4 +132,7 @@ bindsym $mod+Shift+minus move scratchpad
 bindsym $mod+minus scratchpad show
 
 exec --no-startup-id /usr/bin/nm-applet
-exec --no-startup-id /usr/bin/gn
+exec --no-startup-id /usr/bin/gnome-sound-applet
+
+# pip install quickswitch-i3
+bindsym $mod+g exec --no-startup-id quickswitch.py --dmenu "dmenu -i -l 20"

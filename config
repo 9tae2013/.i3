@@ -131,8 +131,16 @@ bindsym $mod+Shift+minus move scratchpad
 # Show the first scratchpad window
 bindsym $mod+minus scratchpad show
 
+# Network and sound applets
 exec --no-startup-id /usr/bin/nm-applet
 exec --no-startup-id /usr/bin/gnome-sound-applet
 
-# pip install quickswitch-i3
+# First `pip install quickswitch-i3`
 bindsym $mod+g exec --no-startup-id quickswitch.py --dmenu "dmenu -i -l 20"
+
+# Use custom keybindings
+exec --no-startup-id /usr/bin/xmodmap $HOME/.Xmodmap
+
+# Start lighttable
+exec firefox
+exec export LD_LIBRARY_PATH=/home/jamie/LightTable:$LD_LIBRARY_PATH /home/jamie/light-table-core/deploy/ltbin

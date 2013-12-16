@@ -7,7 +7,7 @@ i3status = Popen(['i3status', '-c', '~/.i3/i3status.conf'], stdout=PIPE, stderr=
 
 while True:
     line = i3status.readline()
-    stack = " | ".join((item.rstrip() for item in reversed(open('/home/jamie/.deft/stack.md').readlines())))
+    stack = " | ".join((item.rstrip() for item in open('/home/jamie/.deft/stack.md').readlines()))
     sys.stdout.write(stack + " | " + line)
     sys.stdout.flush()
 

@@ -142,5 +142,9 @@ bindsym $mod+g exec --no-startup-id quickswitch.py --dmenu "dmenu -i -l 20"
 exec --no-startup-id /usr/bin/xmodmap $HOME/.Xmodmap
 
 # Start lighttable
-exec firefox
-exec export LD_LIBRARY_PATH=/home/jamie/LightTable:$LD_LIBRARY_PATH /home/jamie/light-table-core/deploy/ltbin
+exec --no-startup-id firefox
+exec --no-startup-id export LD_LIBRARY_PATH=/home/jamie/LightTable:$LD_LIBRARY_PATH /home/jamie/light-table-core/deploy/ltbin
+
+bindsym --release Print exec --no-startup-id gnome-screenshot -i
+
+bindsym $mod+Pause exec i3lock

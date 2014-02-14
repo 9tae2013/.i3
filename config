@@ -120,6 +120,13 @@ bar {
         status_command /home/jamie/.i3/status.py
         position top
         workspace_buttons no
+
+        colors {
+                background #232323
+                statusline #DCDCDC
+        }
+
+        font pango: Ubuntu Mono 12
 }
 
 # Make the currently focused window a scratchpad
@@ -140,8 +147,10 @@ exec --no-startup-id /usr/bin/xmodmap $HOME/.Xmodmap
 
 # Start lighttable
 exec --no-startup-id firefox
-exec --no-startup-id export LD_LIBRARY_PATH=/home/jamie/LightTable:$LD_LIBRARY_PATH /home/jamie/light-table-core/deploy/ltbin
+exec --no-startup-id /home/jamie/LightTable/deploy/LightTable
 
 bindsym --release Print exec --no-startup-id gnome-screenshot -i
 
-bindsym $mod+Pause exec i3lock
+bindsym $mod+End exec i3lock
+
+font pango: Ubuntu Mono 12

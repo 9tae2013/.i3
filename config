@@ -146,7 +146,7 @@ bindsym $mod+g exec --no-startup-id quickswitch.py --dmenu "dmenu -i -l 20"
 exec --no-startup-id /usr/bin/xmodmap $HOME/.Xmodmap
 
 # Start lighttable
-exec --no-startup-id firefox
+exec --no-startup-id firefox-trunk
 exec --no-startup-id /home/jamie/LightTable/deploy/LightTable
 
 bindsym --release Print exec --no-startup-id gnome-screenshot -i

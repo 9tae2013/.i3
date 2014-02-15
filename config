@@ -148,7 +148,7 @@ exec --no-startup-id /usr/bin/gnome-sound-applet
 bindsym $mod+g exec --no-startup-id quickswitch.py --dmenu "dmenu -i -l 20"
 
 # Use custom keybindings
-exec --no-startup-id /usr/bin/xmodmap $HOME/.Xmodmap
+exec --no-startup-id /usr/bin/xmodmap /home/jamie/.Xmodmap
 
 # Start apps
 exec --no-startup-id firefox-trunk

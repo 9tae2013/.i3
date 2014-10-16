@@ -141,6 +141,7 @@ bindsym $mod+Shift+minus move scratchpad
 bindsym $mod+minus scratchpad show
 
 # Network and sound applets
+exec --no-startup-id /usr/bin/gnome-settings-daemon
 exec --no-startup-id /usr/bin/nm-applet
 exec --no-startup-id /usr/bin/gnome-sound-applet
 

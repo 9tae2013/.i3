@@ -155,9 +155,6 @@ exec --no-startup-id /usr/bin/xmodmap /home/jamie/.Xmodmap
 exec --no-startup-id firefox
 exec --no-startup-id /home/jamie/LightTable/deploy/LightTable
 
-# Start touchegg for gesture control
-exec --no-startup-id touchegg
-
 bindsym --release Print exec --no-startup-id gnome-screenshot -i
 
 bindsym $mod+End exec i3lock
